@@ -51,8 +51,6 @@ int main() {
 
     total = principal * pow((1 + (rate / timesCompounded)), (timesCompounded * years));
     printf("After %d years, the total amount will be $%0.2lf \n", years, total);
-
-    printf("Test");
-
+    
     return 0;
 }
