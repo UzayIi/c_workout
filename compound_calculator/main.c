@@ -7,7 +7,8 @@
 
 int main() {
 
-    /*
+     /*
+
     double radius =  0.0;
     double area = 0.0;
     double surfaceArea = 0.0;
@@ -142,7 +143,7 @@ int main() {
         
     }
 
-    */
+    
 
 
 
@@ -177,13 +178,9 @@ int main() {
         printf("Invalid choice. Please enter 'C' or 'F'.\n");
 
     }
+
+    */
     
-    
-    
-    
-    
-    
-    
-    
+
     return 0;
 }
