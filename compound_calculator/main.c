@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <math.h>
 #include <stdint.h>
+#include <windows.h>
 
 int main() {
 
@@ -252,8 +253,119 @@ int main() {
             
         printf("Result: %0.2lf", result);
 
+
+        int number = 1;
+
+        while (number <= 0){
+            printf("Enter a number greater than 0: ");
+            scanf("%d", &number);
+        }
+
+        
+
+        char name [50] = "";
+
+        printf("Enter your name: ");
+        fgets(name, sizeof(name), stdin);
+        name[strlen(name) - 1] = '\0';
+
+        while (strlen(name) == 0){
+            printf("Name cannot be empty! Please enter your name: ");
+            fgets(name, sizeof(name), stdin);
+            name[strlen(name) - 1] = '\0';
+        }
+
+        printf("Hello %s", name);
+
+        
+
+        bool isRunnig = true;
+        char response = '\0';
+
+        while (isRunnig){
+            printf("You are playing a game\n");
+            printf("Would you like to continue? (Y => yes, N => no): ");
+            scanf(" %c", &response);
+
+            if (response != 'Y' && response != 'y'){
+                isRunnig = false;
+            }
+            
+        }
+        printf("You exit the game");
+
+        
+
+        for (int i = 10; i >= 0; i--){
+            Sleep(750);
+            printf("%d\n", i);
+        }
+
+        printf("HAPPY NEW YEAR!");
+
+        
+
+        for (int i = 1; i < 10; i++){
+
+            if (i == 4){
+                continue;
+            }
+            
+            printf("%d\n", i);
+        }
+
+        
+        for (int i = 1; i < 10; i++){
+            printf("%d ", i);
+        }
+        printf("\n");
+
+        for (int i = 1; i < 10; i++){
+            printf("%d ", i);
+        }
+        printf("\n");
+
+        for (int i = 1; i < 10; i++){
+            printf("%d ", i);
+        }
+        printf("\n");
+
+        
+
+        for (int i = 1; i <= 10; i++){
+            for (int j = 1; j <= 10; j++)
+            {
+                printf("%3d ", i * j);
+            }
+            printf("\n");
+        }
+        
         */
 
+        int rows = 0;
+        int columns = 0;
+        char symbol = '\0';
 
-    return 0;
+        printf("Enter the # of rows: ");
+        scanf("%d", &rows);
+
+        printf("Enter the # of columns: ");
+        scanf("%d", &columns);
+
+        printf("Enter a symbol: ");
+        scanf(" %c", &symbol);
+
+        
+
+        for (int i = 0; i < rows; i++){
+            for (int i = 0; i < columns; i++){
+            printf("%c", symbol);
+            }
+            printf("\n");
+        }
+        
+        
+        
+        
+        return 0;
 }
