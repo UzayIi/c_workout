@@ -5,6 +5,7 @@
 #include <math.h>
 #include <stdint.h>
 #include <windows.h>
+#include <time.h>
 
 int main() {
 
@@ -340,7 +341,7 @@ int main() {
             printf("\n");
         }
         
-        */
+        
 
         int rows = 0;
         int columns = 0;
@@ -365,7 +366,17 @@ int main() {
         }
         
         
+
+        srand(time(NULL));
+
+        int min = 50;
+        int max = 100;
         
-        
+        int randomNum = (rand() % (max - min)) + min;
+
+        printf("%d", randomNum);
+
+        */
+
         return 0;
 }
