@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <math.h>
 #include <stdint.h>
+#include <windows.h>
 
 int main() {
 
@@ -295,6 +296,14 @@ int main() {
         printf("You exit the game");
 
         */
+
+        for (int i = 10; i >= 0; i--){
+            Sleep(750);
+            printf("%d\n", i);
+        }
+
+        printf("HAPPY NEW YEAR!");
+        
         
         return 0;
 }
